@@ -10,7 +10,6 @@ return {
 				toggleRightSide = '<Leader>nqr',
 				widthUp = '<Leader>n=',
 				widthDown = '<Leader>n-',
-				scratchPad = '<Leader>ns',
 			},
 		})
 	end

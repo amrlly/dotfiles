@@ -12,5 +12,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
     spec = 'amrlly.plugins',
+    change_detection = { notify = false }
 	install = { colorsheme = 'nord' }
 })
