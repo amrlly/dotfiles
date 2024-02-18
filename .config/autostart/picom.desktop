@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Picom
+Comment=An X compositor
+Exec=/usr/bin/picom

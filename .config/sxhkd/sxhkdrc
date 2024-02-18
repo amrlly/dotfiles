@@ -1,0 +1,32 @@
+XF86AudioMute
+	pulsemixer --toggle-mute
+
+XF86AudioMicMute
+	pulsemixer --id "$(pulsemixer --list-sources | grep 'Default' | sed -n 's/^.*ID: \(\S*\),.*$/\1/p')" --toggle-mute
+
+XF86AudioLowerVolume
+	pulsemixer --change-volume -5
+
+XF86AudioRaiseVolume
+	pulsemixer --change-volume +5
+
+XF86MonBrightnessDown
+	brightnessctl -q s 5%-
+
+XF86MonBrightnessUp
+	brightnessctl -q s +5%
+
+XF86AudioPlay
+	playerctl play-pause
+	
+XF86AudioPause
+	playerctl play-pause
+
+XF86AudioStop
+	playerctl stop
+
+XF86AudioPrev
+	playerctl previous
+
+XF86AudioNext
+	playerctl next

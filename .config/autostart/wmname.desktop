@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=wmname
+Comment=Fixing Java GUI apps
+Exec=/usr/bin/wmname LG3D

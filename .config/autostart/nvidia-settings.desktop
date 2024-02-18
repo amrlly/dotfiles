@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=nvidia-settings
+Comment=Loading nvidia-settings configs
+Exec=/usr/bin/nvidia-settings --load-config-only
