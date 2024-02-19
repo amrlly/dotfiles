@@ -1,5 +1,32 @@
+# Settings
 set hidden true
+set ignorecase true
 
-cmd trash %trash-put $fx
+# Functions
+cmd mkdir ${{
+	printf "Directory Name: "
+	read ans
+	mkdir $ans
+}}
 
+cmd trash ${{
+	trash-put $fx
+}}
+
+cmd touch ${{
+	printf "File Name: "
+	read ans
+	touch $ans
+}}
+
+# Mappings
+map . set hidden!
+map <enter> open
+map R reload
 map D trash
+map \% touch
+map d mkdir
+map p paste
+map x cut
+map y copy
+map C clear
