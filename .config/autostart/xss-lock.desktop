@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=xss-lock
+Comment=Screen locker
+Exec=/usr/bin/xss-lock /usr/bin/sxlock
