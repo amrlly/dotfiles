@@ -1,6 +1,6 @@
 return {
 	'shortcuts/no-neck-pain.nvim',
-	config = function(_, opts)
+	config = function()
 		require('no-neck-pain').setup({
 			width = 140,
 			mappings = {
