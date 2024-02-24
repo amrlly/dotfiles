@@ -17,7 +17,6 @@ export QT_STYLE_OVERRIDE=kvantum
 
 # User dirs
 if [ -f "$HOME/.config/user-dirs.dirs" ]; then
-	source "$HOME/.config/user-dirs.dirs"
 	export $(cut -d = -f 1 "$HOME/.config/user-dirs.dirs")
 fi
 
