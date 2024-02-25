@@ -9,7 +9,30 @@ return {
 		require("mason-lspconfig").setup()
 
 		local lspconfig = require("lspconfig")
-		lspconfig.lua_ls.setup {}
+		lspconfig.lua_ls.setup {
+			settings = {
+				Lua = {
+					runtime = {
+						version = 'Lua 5.4',
+						path = {
+							'?.lua',
+							'?/init.lua',
+							vim.fn.expand'~/.luarocks/share/lua/5.4/?.lua',
+							vim.fn.expand'~/.luarocks/share/lua/5.4/?/init.lua',
+							'/usr/share/5.4/?.lua',
+							'/usr/share/lua/5.4/?/init.lua'
+						}
+					},
+					workspace = {
+						library = {
+							vim.fn.expand'~/.luarocks/share/lua/5.4',
+							'/usr/share/lua/5.4',
+							"/usr/share/awesome/lib",
+						}
+					}
+				}
+			}
+		}
 
 		vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
 		vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
