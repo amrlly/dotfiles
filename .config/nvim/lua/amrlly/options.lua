@@ -1,15 +1,17 @@
+vim.g.editorconfig = true
+
 vim.opt.guicursor = ""
 
 vim.opt.termguicolors = true
 vim.opt.hlsearch = false
 vim.opt.breakindent = true
 
-vim.opt.signcolumn = 'yes'
+vim.opt.signcolumn = "yes"
 vim.opt.colorcolumn = "120"
 vim.opt.number = true
 vim.opt.relativenumber = true
 
-vim.opt.mouse = 'a'
+vim.opt.mouse = "a"
 
 vim.opt.undofile = true
 vim.opt.swapfile = false

@@ -1,17 +1,17 @@
 return {
-	'gbprod/nord.nvim',
+	"gbprod/nord.nvim",
 	lazy = false,
 	priority = 100,
 	config = function()
-		require('nord').setup({
+		require("nord").setup({
 			transparent = true,
 			terminal_colors = true,
-			diff = { mode = 'bg' },
+			diff = { mode = "bg" },
 			borders = true,
-			errors = { mode = 'bg' },
-			search = { theme = 'vim' },
+			errors = { mode = "bg" },
+			search = { theme = "vim" },
 		})
 
-		vim.cmd.colorscheme('nord')
-	end
+		vim.cmd.colorscheme("nord")
+	end,
 }
