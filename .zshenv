@@ -4,12 +4,7 @@
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
 export PAGER=/usr/bin/less
-export BROWSER=/usr/bin/librewolf
 export TERMINAL=/usr/bin/alacritty
-
-# Xdg
-export XDG_CURRENT_DESKTOP=AWESOME
-export DE=awesome
 
 # Qt
 export QT_QPA_PLATFORMTHEME=qt5ct
