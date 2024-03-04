@@ -11,8 +11,4 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({
-	spec = "amrlly.plugins",
-	change_detection = { notify = false },
-	install = { colorsheme = "nord" },
-})
+require("lazy").setup({ spec = "amrlly.plugins", change_detection = { notify = false } })

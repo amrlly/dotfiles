@@ -62,10 +62,12 @@ return {
 										"/usr/share/lua/5.4/?/init.lua",
 									},
 								},
-								library = {
-									vim.fn.expand("~/.luarocks/share/lua/5.4"),
-									"/usr/share/lua/5.4",
-									"/usr/share/awesome/lib",
+								workspace = {
+									library = {
+										vim.fn.expand("~/.luarocks/share/lua/5.4"),
+										"/usr/share/lua/5.4",
+										"/usr/share/awesome/lib/",
+									},
 								},
 								diagnostics = {
 									globals = { "vim", "awesome" },
