@@ -37,7 +37,7 @@ compinit
 autoload -U colors && colors
 setopt promptsubst
 
-PROMPT="%{$fg[blue]%}%~ %{$fg[green]%}%#%{$reset_color%} "
+PROMPT="%{$fg[blue]%}%~ %{$fg[yellow]%}%n %{$fg[green]%}%#%{$reset_color%} "
 
 # Alises
 alias dot="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
